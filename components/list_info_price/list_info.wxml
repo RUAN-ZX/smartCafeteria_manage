@@ -1,0 +1,64 @@
+
+<view 
+    class="list_info_item"
+    wx:for="{{list_info_data}}"
+    wx:for-index="index_base"
+    wx:for-item="item_base"
+    wx:key="id"
+    >
+    <!-- 左侧头像 -->
+    <view class="avatar">
+        <image class="image" src="{{item_base.avatar}}"></image>
+
+    </view>
+
+    <!-- 中间信息 -->
+    <view class="info">
+        <!-- 第一行 -->
+        <view class="name_star">
+            <view class="name">{{item_base.name}}</view>
+            <view class="achieveLabel">{{item_base.achieveLabel}}</view>
+            
+        </view>
+        <!-- 剩下一列 -->
+        <view class="other">
+            
+            <span class="star"><view class="text">评分</view>{{item_base.star}}<view class="text2">⭐</view></span>
+            <span class="fanNum"><view class="text">粉丝</view>{{item_base.fanNum}}<view class="text2">人</view></span>
+            <span class="customNum"><view class="text">帮助</view>{{item_base.customNum}}<view class="text2">人</view></span>
+            <span class="time"><view class="text">服务</view>{{item_base.timeNum}}<view class="text2">时</view></span>
+
+            
+        </view>
+
+        <view class="expertLabel">
+            <view
+                class="labelItem"
+                wx:for="{{item_base.expertLabel}}"
+                wx:for-index="index"
+                wx:for-item="item"
+                wx:key="*this"
+            >
+                {{item}}
+            </view>
+        </view>
+        
+    </view>
+
+    <!-- 右侧一列 -->
+    <view class="price_talk">
+        <view class="price">
+            <span class="sign">￥</span>
+            <span class="num">{{item_base.price}}</span>
+            <span class="sign2">起</span>
+        </view>
+
+        <view class="talk">
+            <image class="talk_icon" mode="widthFix" src="../../jpg/other/index_chat.png"></image>
+            <navigator class="navigator" url="../../pages/Singleconsult/Singleconsult" open-type="navigate">
+            
+            </navigator>
+        </view>
+    </view>
+
+</view>

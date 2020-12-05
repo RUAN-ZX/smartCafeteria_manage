@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "list_info":"../../components/list_info/list_info"
+  }
+}

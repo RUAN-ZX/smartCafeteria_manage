@@ -1,0 +1,223 @@
+.background {
+  height: 1700rpx;
+  width: 750rpx;
+  position: fixed;
+  background-color: var(--bgColor);
+  z-index: 0;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  color: var(--themeColor);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-back {
+  z-index: 10;
+  position: fixed;
+  margin: 40rpx;
+  color: black;
+  font-weight: bolder;
+  font-size: 50rpx;
+}
+.header {
+  margin: 0;
+  position: relative;
+  height: 300rpx;
+  width: 100%;
+  display: flex;
+}
+.header .imageHeader {
+  position: absolute;
+  width: 100%;
+  height: 250rpx;
+  background-image: linear-gradient(rgba(240, 248, 255, 0) 90%, #f0f8ff 100%), url('http://sayhitotheworld.ryanalexander.cn/images/me.jpg');
+}
+.header .cardCafe {
+  position: absolute;
+  margin: 100rpx 40rpx 0 40rpx;
+  padding: 30rpx;
+  height: 170rpx;
+  background-color: var(--cardColor);
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+}
+.header .cardCafe .left {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+.header .cardCafe .left .name {
+  font-size: 18px;
+  font-weight: bolder;
+  color: black;
+}
+.header .cardCafe .left .sold_per {
+  font-size: 12px;
+  font-weight: lighter;
+  color: var(--labelColor);
+  display: flex;
+  flex-direction: row;
+}
+.header .cardCafe .left .sold_per .sold {
+  flex: 1;
+  text-align: left;
+}
+.header .cardCafe .left .sold_per .per {
+  flex: 1;
+  text-align: left;
+}
+.header .cardCafe .left .star {
+  color: var(--themeColor);
+  font-size: 12px;
+  font-weight: lighter;
+}
+.header .cardCafe .logo {
+  flex: 1;
+  height: 112rpx;
+}
+.header .cardCafe .logo .image {
+  width: 100%;
+  height: 100%;
+}
+.menu_wrapper {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.menu_wrapper .left {
+  flex: 1;
+  display: block;
+}
+.menu_wrapper .left .lmenu {
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 13px;
+}
+.menu_wrapper .left .choosen {
+  background-color: white;
+  color: black;
+  border-left: 10rpx solid var(--themeColor);
+}
+.menu_wrapper .left .unchoosen {
+  background-color: var(--lineColor);
+  color: var(--labelColor);
+  border-left: 1px solid var(--themeColor);
+}
+.menu_wrapper .menu {
+  flex: 4;
+}
+.menu_wrapper .menu .info {
+  padding: 0 15rpx 15rpx 15rpx;
+  font-size: 12px;
+  height: 50rpx;
+  color: var(--labelColor);
+  line-height: 14px;
+  text-align: start;
+}
+.menu_wrapper .menu .menu_ {
+  border-bottom: 1px solid var(--lineColor);
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.menu_wrapper .menu .menu_ .src {
+  flex: 1;
+}
+.menu_wrapper .menu .menu_ .src .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.menu_wrapper .menu .menu_ .right {
+  margin-left: 10rpx;
+  flex: 3;
+  text-align: left;
+}
+.menu_wrapper .menu .menu_ .right .name {
+  font-weight: bolder;
+  font-size: 30rpx;
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.menu_wrapper .menu .menu_ .right .left_ {
+  font-size: 13px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+}
+.menu_wrapper .menu .menu_ .right .left_ .left__ {
+  flex: 3;
+}
+.menu_wrapper .menu .menu_ .right .left_ .left__ ._star {
+  color: var(--themeColor);
+}
+.menu_wrapper .menu .menu_ .right .left_ .left__ ._sold {
+  color: var(--labelColor);
+  font-size: 13px;
+}
+.menu_wrapper .menu .menu_ .right .left_ .left__ .price {
+  font-weight: bolder;
+  color: crimson;
+  font-size: 16px;
+}
+.menu_wrapper .menu .menu_ .right .left_ .left__ .price .rmb {
+  font-size: 12px;
+}
+.menu_wrapper .menu .menu_ .right .left_ .add {
+  flex: 1;
+  text-align: center;
+  font-size: 30px;
+}
+.menu_wrapper .menu .blank {
+  height: 100rpx;
+}
+.foot {
+  z-index: 100;
+  position: fixed;
+  text-align: center;
+  width: 90%;
+  left: 43rpx;
+  bottom: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 30rpx;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(251, 216, 86, 0.4);
+}
+.foot .account {
+  flex: 3;
+  font-size: 28rpx;
+  border-radius: 30rpx 0 0 30rpx;
+  background-color: var(--bgColor);
+  display: flex;
+  flex-direction: row;
+  color: var(--themeColor);
+}
+.foot .account .account_left {
+  flex: 1;
+}
+.foot .account .account_right {
+  flex: 1;
+}
+.foot .order {
+  flex: 1;
+  border-radius: 0 30rpx 30rpx 0;
+  background-color: var(--themeColor);
+  font-size: 40rpx;
+  color: var(--bgColor);
+}
+.card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  min-height: 170rpx;
+  z-index: 6;
+  border-radius: 10rpx;
+}

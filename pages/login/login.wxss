@@ -1,0 +1,118 @@
+.background {
+  width: 750rpx;
+  position: relative;
+  background-color: var(--bgColor);
+  z-index: 0;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  color: var(--themeColor);
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.login {
+  position: relative;
+  margin: 20px;
+  z-index: 0;
+}
+.login .user {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+  border-bottom: 1px solid var(--lineColor);
+}
+.login .user .login_iconfont {
+  text-align: center;
+  font-size: 20px;
+  flex: 1;
+}
+.login .user input {
+  flex: 9;
+  height: 40px;
+  font-size: 16px;
+}
+.login .user .text {
+  color: var(--labelColor);
+  font-size: 16px;
+}
+.login .psw {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+  border-bottom: 1px solid var(--lineColor);
+}
+.login .psw .login_iconfont {
+  text-align: center;
+  flex: 1;
+  height: 40px;
+  font-size: 20px;
+}
+.login .psw input {
+  flex: 7;
+  height: 40px;
+  font-size: 16px;
+}
+.login .psw .password {
+  color: var(--labelColor);
+  font-size: 16px;
+}
+.login .psw .captcha {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: var(--bgColor);
+  border-radius: 8px;
+  background-color: var(--themeColor);
+  flex: 2;
+  height: 20px;
+  font-size: 10px;
+  line-height: 20px;
+  opacity: 1;
+  display: block;
+  transition: 0.3s opacity ease-out;
+}
+.login .psw .captcha:active {
+  opacity: 0.1;
+}
+.login .hint {
+  margin: 5px 0 5px 0;
+  font-size: 14px;
+  padding-left: 5px;
+  line-height: 20px;
+  border: 1px solid var(--themeColor);
+  color: var(--themeColor);
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+.login .loginBtn {
+  line-height: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: var(--bgColor);
+  border-radius: 10px;
+  background-color: var(--themeColor);
+}
+.login .others {
+  display: flex;
+  flex-direction: row;
+  height: 20px;
+  font-size: 15px;
+  margin-top: 10px;
+  color: var(--labelColor);
+}
+.login .others .others_email {
+  text-align: left;
+  flex: 1;
+  line-height: 20px;
+}
+.login .others .others_psw {
+  text-align: right;
+  flex: 1;
+  line-height: 20px;
+}

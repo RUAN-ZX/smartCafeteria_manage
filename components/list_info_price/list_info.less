@@ -1,0 +1,183 @@
+.list_info_item{
+    margin-top:30rpx;
+    display: flex;
+    flex-direction: row;
+    height:230rpx;
+    padding-bottom: 10rpx;
+    border-bottom: 2rpx solid #bfbfbf;
+    .avatar{
+        flex:1; //只需要图片不失真就问题不大
+        height:100%;
+        
+        .image{
+            width:100%;
+            height: 100%;
+            border-radius: 20rpx;
+        }
+    }
+
+    .info{
+        margin-left:20rpx;
+        flex:2;
+        display: flex;
+        flex-direction: column;
+
+        .name_star{
+            flex:16;
+            display: flex;
+            flex-direction: column;
+
+            .name{
+                font-weight: bold;
+                font-size: 40rpx;
+
+
+            }
+
+            .achieveLabel{
+                margin-top:8rpx;
+                white-space: nowrap;
+                text-overflow:ellipsis;
+                font-size: 25rpx;
+
+            }
+
+        }
+        .other{
+            flex:20;
+            margin-top:8rpx;
+            display: grid;
+            grid-template-columns: repeat(2,50%);
+            grid-template-rows: repeat(2,25rpx);
+            grid-row-gap: 6rpx;
+
+            font-size: 25rpx;
+            .star{
+                display: flex;
+                flex-direction: row;
+                font-weight: bold;
+                .text{
+                    margin-right: 10rpx;
+                    font-weight: normal;
+                }
+                .text2{
+                    font-weight: normal;
+                }
+            }
+            .fanNum{
+                display: flex;
+                flex-direction: row;
+                font-weight: bold;
+                .text{
+                    margin-right: 10rpx;
+                    font-weight: normal;
+                }
+                .text2{
+                    font-weight: normal;
+                }
+            } 
+            .customNum{
+                display: flex;
+                flex-direction: row;
+                font-weight: bold;
+                .text{
+                    margin-right: 10rpx;
+                    font-weight: normal;
+                }
+                .text2{
+                    font-weight: normal;
+                }
+            } 
+            .time{
+                display: flex;
+                flex-direction: row;
+                font-weight: bold;
+                .text{
+                    margin-right: 10rpx;
+                    font-weight: normal;
+                }
+                .text2{
+                    font-weight: normal;
+                }
+            }
+
+            
+
+        }
+
+        .expertLabel{
+            flex:10;
+            margin-top:8rpx;
+            display: flex;
+            flex-direction: row;
+            .labelItem{
+                margin-right:15rpx;
+                flex:1;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                color:orange;
+                border:2rpx solid;
+                font-size: 25rpx;
+                border-radius: 5rpx;
+
+            }
+           
+
+        }
+
+        
+    }
+
+
+    // 没必要放置价钱 具体价钱点进去再说 觉得好了说实话不在意价钱
+    .price_talk{
+        flex:1;
+        
+        width: 100%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        padding-bottom: 10rpx;
+        .price{
+            flex:1;
+            display: flex;
+            color:orange;
+            flex-direction: row;
+            .num{
+                
+                font-size: 35rpx;
+            }
+            .sign{
+                
+                font-size: 20rpx;
+            }
+            .sign2{
+                
+                margin-top:20rpx;
+                font-size: 20rpx;
+            }
+        }
+
+        .talk{
+            // margin-top:100rpx;
+            flex:5;
+            width:100%;
+            //??? 
+            margin-top: 50rpx;
+            .talk_icon{
+                width:100%;
+
+                border-radius: 20rpx;
+                
+
+            }
+            .navigator{
+                background-color: saddlebrown;
+            }
+        }
+    }
+
+
+
+}

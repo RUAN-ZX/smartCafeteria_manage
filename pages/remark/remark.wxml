@@ -1,0 +1,24 @@
+<view style="opacity:{{contentOpacity}}"
+    class="content">
+    <view class="header" style="padding-top: {{cap_info.top}}px;" >
+        <span class="iconfont icon-back backicon transition" bindtap = "backTap"></span>
+        
+        <span class="text"
+            style="margin-left:{{cap_info.height}}px;">    
+            请写下您的备注
+        </span>
+    </view>
+
+
+
+    <view class="menu card">
+        <input type="text" placeholder="您的备注:)"/>
+    </view>
+
+    <view class="submit transition" bindtap = "backTap">
+        提交
+    </view>
+
+
+
+</view>

@@ -1,0 +1,43 @@
+<!-- <scroll-view 
+    class="tabs"
+    scroll-x="true"
+    >
+    
+    <view
+        
+        wx:for="{{tabs}}"
+        wx:key="id"
+        class="tabs_item {{item.isActive?'active':''}}"
+        bindtap="handleItemTap"
+        data-index="{{index}}"
+
+    >
+    {{item.name}}        
+    </view>
+        
+    
+</scroll-view> -->
+<view class="skill-sequence-panel-content-wrapper"> 
+    <!-- 左边虚化 -->
+    <!-- <view class="hide-content-box hide-content-box-left"></view> -->
+    <!-- 右边虚化--> 
+    <view class="hide-content-box hide-content-box-right"></view>
+    <!--横向滚动-->
+    <scroll-view class="skill-sequence-panel-content" scroll-x>
+        <view 
+            wx:for="{{tabs}}"
+            wx:key="id"
+            class="skill-sequence-skill-wrapper {{item.isActive?'active':''}}"
+            bindtap="handleItemTap"
+            data-index="{{index}}"
+        >
+        {{item.name}}
+        
+           
+        </view>
+        
+    </scroll-view>
+</view>
+
+<slot>
+</slot>

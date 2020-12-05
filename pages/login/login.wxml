@@ -1,0 +1,56 @@
+<!--pages/login/login.wxml-->
+
+
+
+<image class="background" src="../../jpg/login/login.jpg" mode="widthFix">
+</image>
+
+<view class="login">
+    <view class="user">
+        <span class="login_iconfont iconfont icon-fukuan"></span>
+        <input 
+            placeholder-class="text" 
+            type="text" 
+            placeholder="{{login.user}}"
+            bindblur ="UidInput"/>
+    </view>
+
+    <view class="psw">
+        <span class="login_iconfont iconfont icon-shuohuaqipao"></span>
+        <input 
+            placeholder-class="password" 
+            type="password" 
+            placeholder="{{login.psw}}"
+            bindblur = "UpwdInput"/>
+        <view class="captcha" bindtap = "getCaptcha">
+            {{login.captcha}}
+        </view>
+    </view>
+
+    <view class="hint">
+        <span>提示：</span>{{hint}}
+    </view>
+
+
+    <view class="loginBtn" url="../../pages/index/index" bindtap ="login" hover-class="navigator-hover" open-type="navigate">
+        登录
+    </view>
+
+    <view class="others">
+
+        <navigator class="others_email" url="../../pages/emailChangeLogin/emailChange" hover-class="navigator-hover" open-type="navigate">
+            换手机号？
+        </navigator>
+        
+        
+        <navigator class="others_psw" url="../../pages/pwdChangeLogin/pwdChange" hover-class="navigator-hover" open-type="navigate">
+            密码忘了？
+        </navigator>
+    </view>
+</view>
+
+<!-- 检测到从来没有登录成功的用户 在一开始就弹窗说明 
+    1 第一次使用 系统将向您在教务处登记过的邮箱发送验证码 您凭借此验证码登录
+    2 已在系统设置过密码 请直接使用密码登录 而下次登录会自动登录进入系统
+    3 如果发送的邮箱地址不是您想要的 或者获取不到您的邮箱地址 则点击登录按钮下方的“想换邮箱？”来登记新邮箱 完成登录
+-->

@@ -1,0 +1,39 @@
+<view style="opacity:{{contentOpacity}}"
+    class="content">
+    <view class="header" style="padding-top: {{cap_info.top}}px;" >
+        <span class="iconfont icon-back backicon transition" bindtap = "backTap"></span>
+        
+        <span class="text"
+            style="margin-left:{{cap_info.height}}px;">    
+            请输入菜品相关信息
+        </span>
+    </view>
+
+
+
+    <view class="menu card">
+        <view class="top">
+            <view
+                class="left transition" 
+                bindtap = "addTap"
+                >
+                +
+            </view>
+            <view class="right">
+                <input type="text" class="name" placeholder="菜品名称"/>
+                <input type="text" class="price" placeholder="菜品价格"/>
+            </view>
+        </view>
+        <view class="bottom">
+
+        </view>
+        <!-- <input type="text" placeholder="您的备注:)"/> -->
+    </view>
+
+    <view class="submit transition" bindtap = "backTap">
+        提交
+    </view>
+
+
+
+</view>

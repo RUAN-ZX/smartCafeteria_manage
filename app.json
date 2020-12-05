@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/tab_index/index",
+    "pages/tab_order/order",
+      "pages/addmenu/addmenu",
+    "pages/tab_msg/msg",
+      
+    "pages/tab_me/me",
+
+
+    "pages/_emailChange/emailChange",
+    "pages/_pwdChange/pwdChange",
+    "pages/_emailChangeLogin/emailChange",
+    "pages/_pwdChangeLogin/pwdChange",
+    "pages/_feedback/feedback",
+    "pages/404/404",
+    "pages/search/search"
+  ],
+  "entryPagePath": "pages/login/login",
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#91b4ff",
+    "navigationBarBackgroundColor": "#91b4ff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Life",
+    "enablePullDownRefresh": false,
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/tab_index/index",
+        "text": "首页",
+        "iconPath": "icon/index.png",
+        "selectedIconPath": "icon/index_.png"
+      },
+      {
+        "pagePath": "pages/tab_msg/msg",
+        "text": "上新",
+        "iconPath": "icon/new.png",
+        "selectedIconPath": "icon/new_.png"
+      },
+      {
+        "pagePath": "pages/tab_order/order",
+        "text": "反馈",
+        "iconPath": "icon/feedback.png",
+        "selectedIconPath": "icon/feedback_.png"
+      },
+      {
+        "pagePath": "pages/tab_me/me",
+        "text": "我的",
+        "iconPath": "icon/me.png",
+        "selectedIconPath": "icon/me_.png"
+      }
+    ],
+    "color": "#afafaf",
+    "selectedColor": "#F9D654",
+    "borderStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

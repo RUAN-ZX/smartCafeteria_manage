@@ -1,0 +1,146 @@
+<!--pages/consult/consult.wxml-->
+<!-- <view class="backgroud"></view> -->
+
+<view class="body">
+    <view class="header">
+        <view class="_header" style="padding-top: {{cap_info.top}}px;" >
+            <view class="text">
+                <span class="icon-company locate iconfont"></span>    
+                杭州丰美餐饮管理有限公司
+            </view>
+        </view>
+        <view 
+            class="filterRow"
+                >
+            <view class="filterItem" bindtap="choiceChange_1">全部</view>
+
+            <view class="filterItem" bindtap="choiceChange_2">排序</view>
+
+            <view class="filterItem" bindtap="filterChange">
+                <span class="iconfont icon-filter"></span>筛选</view>
+        </view>
+
+        
+
+    </view>
+
+    
+    
+    <view class="filter {{hide.filter}}">
+        
+        <view 
+            class="title " 
+            wx:for="{{combobox[3].child}}"
+            wx:for-item="item_title"
+            wx:for-index="index_title"
+            wx:key="index_title"
+            data-type="3"
+            
+            >
+            
+            {{item_title.title}}
+            <br/><br/>
+            <view 
+                class="item {{item_child.css}}"
+                wx:for="{{item_title.child}}"
+                wx:for-item="item_child"
+                wx:for-index="index_child"
+                wx:key="index_child">
+                {{item_child.name}}
+            </view>
+        </view>
+        <view class="btn">
+            <view class="reset">重置</view>
+            <view class="ensure">确定</view>
+        </view>
+        
+    </view>
+
+    <!-- <view class="filter {{hide.filter}}"> -->
+    <view class="choice {{hide.choice_1}}">
+        <view 
+            class="title {{item_title.css}}" 
+            wx:for="{{combobox[0].child}}"
+            wx:for-item="item_title"
+            wx:for-index="index_title"
+            wx:key="index_title"
+            data-type="0"
+            bindtap = "filter"
+            data-choice = "{{index_title}}"
+            >
+            {{item_title.name}}
+        </view>
+    </view>
+
+    <view class="choice {{hide.choice_2}}">
+        <view 
+            class="title {{item_title.css}}" 
+            wx:for="{{combobox[1].child}}"
+            wx:for-item="item_title"
+            wx:for-index="index_title"
+            wx:key="index_title"
+            bindtap = "filter"
+            data-type= "1"
+            data-choice = "{{index_title}}">
+            {{item_title.name}}
+        </view>
+    </view>
+    
+
+    <view class="choice {{hide.choice_3}}">
+        <view 
+            class="title {{item_title.css}}" 
+            wx:for="{{combobox[2].child}}"
+            wx:for-item="item_title"
+            wx:for-index="index_title"
+            wx:key="index_title"
+            bindtap = "filter"
+            data-type= "2"
+            data-choice = "{{index_title}}">
+            {{item_title.name}}
+        </view>
+    </view>
+</view>
+
+
+<!-- 筛选菜单出现时可以做背景 注意这个顺序！ -->
+<view 
+    class="shield"
+    style="z-index:{{z_shield}};background-color: rgba(0, 0, 0, {{opacity_shield}});"
+    bindtap = "shield"
+    >
+</view>
+
+<view 
+    class="content"
+    style="position:{{scrollEnable}};">
+    <view class="menu ">
+        <view 
+            wx:for="{{menu}}" 
+            class="menu_ transition"
+            wx:key="index"
+            data-index="{{index}}"
+            bindtap="menuTap"
+        >   
+            <view class="src">
+                <image class="image" src="{{item.src}}" mode="scaleToFill"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.name}}</view>
+                <view class="left_">
+                    <view class="left__">
+                        <view class="_star">★★★★★</view>
+                        <view class="_sold">月销量：{{item.sold}}</view>
+                        <view class="price"><span class="rmb">¥</span>{{item.price}}</view>
+                    
+                    </view>
+                    <!-- <view 
+                        class="add iconfont icon-back transition"
+                        bindtap="addTap"
+                        data-index="{{index}}"></view> -->
+                </view>
+                
+            </view>
+        </view>
+    </view>
+</view>

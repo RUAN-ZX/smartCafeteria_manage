@@ -1,0 +1,23 @@
+.search_input {
+  height: 170rpx;
+  padding: 85rpx 10rpx 10rpx 10rpx;
+  background-color: var(--themeColor);
+  flex-direction: row;
+  display: flex;
+}
+.search_input .navigator {
+  height: 90%;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 35rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.search_input .searchImage {
+  display: flex;
+  width: 9%;
+  height: 90%;
+}

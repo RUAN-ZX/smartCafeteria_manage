@@ -1,0 +1,57 @@
+<view class="background">
+    
+</view>
+
+<view class="content">
+    <view 
+        class="shield"
+        style="z-index:{{z_shield}};background-color: rgba(0, 0, 0, {{opacity_shield}});"
+        bindtap = "shield"
+    >  </view>
+
+
+    <view class="header" style="padding-top: {{cap_info.top}}px;">
+        <view class="text"
+            
+            style="margin-left:{{cap_info.height}}px;">
+            
+            菜品上新
+        </view>
+    </view>
+
+    <view class="add_ transition"
+    bindtap = "addTap">
+        +添加菜品
+    </view>
+    <view class="menu card">
+        <view 
+            wx:for="{{menu}}" 
+            class="menu_ transition"
+            wx:key="index"
+            data-index="{{index}}"
+            bindtap="menuTap"
+        >   
+            <view class="src">
+                <image class="image" src="{{item.src}}" mode="scaleToFill"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.name}}</view>
+                <view class="left_">
+                    <view class="left__">
+                        <view class="_star">★★★★★</view>
+                        <view class="_sold">月销量：{{item.sold}}</view>
+                        <view class="price"><span class="rmb">¥</span>{{item.price}}</view>
+                    
+                    </view>
+                    <view 
+                        class="add iconfont icon-back transition"
+                        bindtap="addTap"
+                        data-index="{{index}}"></view>
+                </view>
+                
+            </view>
+        </view>
+    </view>
+</view>
+
+

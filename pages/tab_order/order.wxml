@@ -1,0 +1,91 @@
+<view class="background">
+    
+</view>
+
+
+
+
+<view class="content">
+    <view 
+        class="shield"
+        style="z-index:{{z_shield}};background-color: rgba(0, 0, 0, {{opacity_shield}});"
+        bindtap = "shield"
+    >   
+    </view>
+    
+    <view class="header" style="padding-top: {{cap_info.top}}px;">
+        <view class="text"
+            
+            style="margin-left:{{cap_info.height}}px;">
+            <view class="years" bindtap="choiceChange_1">
+                {{combobox.name}}
+                <span class="iconfont icon-fukuan">
+    
+                </span>
+            </view>
+            教学业绩考核
+        </view>
+    </view>
+    
+    <view class="choice {{hide.choice_1}}">
+        <view 
+            class="title {{item_title.css}}" 
+            wx:for="{{combobox.child}}"
+            wx:for-item="item_title"
+            wx:for-index="index_title"
+            wx:key="index_title"
+            data-type="0"
+            bindtap = "filter"
+            data-choice = "{{index_title}}"
+            >
+            {{item_title.name}}
+        </view>
+    </view>
+    
+    <view class="index_wrapper">
+        <view class="card achievement">
+            <view class="label">
+                {{a.alabel}}
+                <span class="participate">
+                    {{a.accident}}
+                </span>
+                <span class="text">
+                    出现教学事故
+                </span>
+            </view>
+        
+            <view class="content">
+                <view class="grade">
+                    {{a.agrade}}
+                    
+                </view>
+                <view class="items_wrapper">
+                    <view class="items"
+                        wx:for="{{a.aitem}}"
+                        wx:for-item="items"
+                        wx:key="index">
+                        <view class="item_iconfont iconfont {{items.icon}}">
+    
+                        </view>
+                        
+                        <view class="name">
+                            {{items.name}}
+                        </view>
+                        
+                        <span class="value">
+                            {{items.value}}
+                        </span>
+                    </view>
+    
+                    
+                </view>
+                <view class="info">
+                    备注信息 <span class="value">
+                        {{a.info}}
+                    </span>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

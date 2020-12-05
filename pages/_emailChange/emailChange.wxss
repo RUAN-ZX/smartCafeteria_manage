@@ -1,0 +1,9 @@
+.back {
+  width: 100px;
+  height: 100px;
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+  font-size: 100rpx;
+  line-height: 100px;
+  text-align: center;
+}

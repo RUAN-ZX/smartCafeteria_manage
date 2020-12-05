@@ -1,0 +1,128 @@
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.background {
+  height: 1700rpx;
+  width: 750rpx;
+  position: fixed;
+  background-color: var(--bgColor);
+  z-index: -1;
+}
+.card {
+  margin: 0 42rpx 30rpx 42rpx;
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  position: relative;
+  min-height: 200rpx;
+  padding: 10rpx 20rpx 20rpx 20rpx;
+  z-index: 6;
+  border-radius: 10rpx;
+}
+.content {
+  transition: 0.3s opacity ease-out;
+  overflow: hidden;
+}
+.content .header {
+  position: relative;
+  padding: 10px;
+  width: 100%;
+  background-color: var(--themeColor);
+}
+.content .header .text {
+  color: var(--bgColor);
+  font-size: 20px;
+}
+.content .header .text .years {
+  display: inline;
+  padding: 0px 6px 2px 6px;
+  border: 2px solid;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.content .add_ {
+  z-index: 10;
+  position: relative;
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+  margin: 42rpx;
+  width: 90%;
+  z-index: 0;
+  border-radius: 30rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  font-weight: bolder;
+  text-align: center;
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+}
+.content .menu {
+  width: 90%;
+  z-index: 0;
+  position: relative;
+}
+.content .menu .menu_ {
+  border-bottom: 1px solid var(--lineColor);
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.content .menu .menu_ .src {
+  flex: 1;
+}
+.content .menu .menu_ .src .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.content .menu .menu_ .right {
+  margin-left: 10rpx;
+  flex: 3;
+  text-align: left;
+}
+.content .menu .menu_ .right .name {
+  font-weight: bolder;
+  font-size: 30rpx;
+  display: block;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.content .menu .menu_ .right .left_ {
+  font-size: 13px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+}
+.content .menu .menu_ .right .left_ .left__ {
+  flex: 3;
+}
+.content .menu .menu_ .right .left_ .left__ ._star {
+  color: var(--themeColor);
+}
+.content .menu .menu_ .right .left_ .left__ ._sold {
+  color: var(--labelColor);
+  font-size: 13px;
+}
+.content .menu .menu_ .right .left_ .left__ .price {
+  font-weight: bolder;
+  color: crimson;
+  font-size: 16px;
+}
+.content .menu .menu_ .right .left_ .left__ .price .rmb {
+  font-size: 12px;
+}
+.content .menu .menu_ .right .left_ .add {
+  flex: 1;
+  color: var(--labelColor);
+  text-align: center;
+  font-size: 30px;
+}
+.content .shield {
+  height: 1700rpx;
+  width: 750rpx;
+  position: fixed;
+  background-color: var(--bgColor);
+}

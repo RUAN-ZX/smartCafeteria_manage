@@ -1,0 +1,128 @@
+{
+  "id": "2240163",
+  "name": "智慧食堂",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4320337",
+      "name": "返回",
+      "font_class": "back",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "6744022",
+      "name": "律领英我的",
+      "font_class": "me",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "937106",
+      "name": "订单",
+      "font_class": "order",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "12237004",
+      "name": "消息",
+      "font_class": "msg",
+      "unicode": "e6da",
+      "unicode_decimal": 59098
+    },
+    {
+      "icon_id": "2468116",
+      "name": "定位",
+      "font_class": "locate",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "5800412",
+      "name": "添加",
+      "font_class": "add",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "1119327",
+      "name": "首页 接单",
+      "font_class": "getOrder",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "201569",
+      "name": "3.1-上新",
+      "font_class": "update",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "623834",
+      "name": "联系我们-邮件",
+      "font_class": "contact",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "637761",
+      "name": "反馈",
+      "font_class": "advice",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "1105010",
+      "name": "手机",
+      "font_class": "phone",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1277697",
+      "name": "首页",
+      "font_class": "index",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "1613371",
+      "name": "密码",
+      "font_class": "pwd",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "4253515",
+      "name": "首页",
+      "font_class": "index_",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "6289610",
+      "name": "公司",
+      "font_class": "company",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6425579",
+      "name": "反馈",
+      "font_class": "fankui1",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "12959359",
+      "name": "退出登录",
+      "font_class": "exit",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    }
+  ]
+}

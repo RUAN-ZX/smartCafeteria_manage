@@ -1,0 +1,7 @@
+{
+  "desc": "miao",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}

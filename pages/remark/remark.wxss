@@ -1,0 +1,66 @@
+.background {
+  height: 1700rpx;
+  width: 750rpx;
+  position: fixed;
+  background-color: var(--bgColor);
+  z-index: 0;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  min-height: 170rpx;
+  z-index: 6;
+  border-radius: 10rpx;
+}
+.content {
+  transition: 0.3s opacity ease-out;
+  overflow: hidden;
+}
+.content .card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  border-radius: 15rpx;
+  min-height: 200rpx;
+  z-index: 1;
+  position: relative;
+}
+.content .header {
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+  font-size: 20px;
+}
+.content .header .backicon {
+  font-weight: bolder;
+  text-align: left;
+  display: inline;
+}
+.content .header .text {
+  text-align: center;
+}
+.content .menu {
+  margin: 20rpx;
+  padding: 30rpx;
+}
+.content .submit {
+  margin: 20rpx;
+  color: var(--bgColor);
+  background-color: var(--themeColor);
+  font-size: 40rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  border-radius: 10rpx;
+}

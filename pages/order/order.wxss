@@ -1,0 +1,195 @@
+.background {
+  height: 1700rpx;
+  width: 750rpx;
+  position: fixed;
+  background-color: var(--bgColor);
+  z-index: 0;
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  z-index: 6;
+  border-radius: 10rpx;
+}
+.content {
+  transition: 0.3s opacity ease-out;
+  overflow: hidden;
+}
+.content .card {
+  background-color: var(--cardColor);
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0, 0, 0, 0.21);
+  border-radius: 15rpx;
+  z-index: 1;
+  position: relative;
+}
+.content .header {
+  position: relative;
+  z-index: 5;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  background-color: var(--themeColor);
+  color: var(--bgColor);
+  font-size: 20px;
+}
+.content .header .backicon {
+  font-weight: bolder;
+  text-align: left;
+  display: inline;
+}
+.content .header .text {
+  text-align: center;
+}
+.content .menu {
+  margin: 20rpx;
+  padding: 10rpx;
+}
+.content .menu .menu_ {
+  border-bottom: 1px solid var(--lineColor);
+  padding: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.content .menu .menu_ .src {
+  flex: 1;
+}
+.content .menu .menu_ .src .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+.content .menu .menu_ .right {
+  margin-left: 10rpx;
+  flex: 6;
+  text-align: left;
+}
+.content .menu .menu_ .right .name {
+  font-weight: bolder;
+  font-size: 25rpx;
+  display: block;
+  height: 25rpx;
+  line-height: 25rpx;
+}
+.content .menu .menu_ .right .left_ {
+  font-size: 13px;
+  font-weight: lighter;
+  display: flex;
+  flex-direction: row;
+}
+.content .menu .menu_ .right .left_ .left__ {
+  flex: 3;
+}
+.content .menu .menu_ .right .left_ .left__ ._star {
+  color: var(--themeColor);
+}
+.content .menu .menu_ .right .left_ .left__ ._sold {
+  color: var(--labelColor);
+  font-size: 13px;
+}
+.content .menu .menu_ .right__ {
+  flex: 1;
+  text-align: right;
+  margin-right: 50rpx;
+}
+.content .menu .menu_ .right__ .price {
+  flex: 1;
+  font-weight: bolder;
+  color: var(--labelColor);
+  font-size: 16px;
+}
+.content .menu .menu_ .right__ .price .rmb {
+  font-size: 12px;
+}
+.content .menu .account {
+  line-height: 30rpx;
+  text-align: right;
+  margin: 20rpx 60rpx 0 0;
+}
+.content .menu .account .account_text {
+  color: var(--labelColor);
+  font-size: 25rpx;
+}
+.content .menu .account .account_price {
+  color: var(--themeColor);
+  font-size: 60rpx;
+  font-weight: bolder;
+}
+.content .wrapper {
+  margin: 20rpx;
+}
+.content .wrapper .remark {
+  margin: 20rpx;
+  padding: 20rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  color: var(--labelColor);
+  border-bottom: 1px solid var(--lineColor);
+}
+.content .wrapper .remark .remark_text {
+  flex: 5;
+  text-align: left;
+}
+.content .wrapper .remark .remark_icon {
+  flex: 1;
+  text-align: right;
+  font-weight: bolder;
+}
+.content .wrapper .tools {
+  margin: 20rpx;
+  padding: 20rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: row;
+  color: var(--labelColor);
+  border-bottom: 1px solid var(--lineColor);
+}
+.content .wrapper .tools .tools_text {
+  flex: 5;
+  text-align: left;
+}
+.content .wrapper .tools .tools_icon {
+  flex: 1;
+  text-align: right;
+  font-weight: bolder;
+}
+.content .foot {
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  left: 0rpx;
+  bottom: 0rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: white;
+  box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(251, 216, 86, 0.4);
+  display: flex;
+  flex-direction: row;
+}
+.content .foot .account {
+  flex: 2;
+  text-align: right;
+  margin-right: 10rpx;
+  color: var(--labelColor);
+  font-size: 25rpx;
+}
+.content .foot .account .account_price {
+  font-size: 60rpx;
+  font-weight: bolder;
+  color: var(--themeColor);
+}
+.content .foot .order {
+  flex: 1;
+  text-align: center;
+  color: var(--bgColor);
+  background-color: var(--themeColor);
+}

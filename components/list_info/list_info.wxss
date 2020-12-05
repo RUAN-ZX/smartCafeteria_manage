@@ -1,0 +1,112 @@
+.list_info_item {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: row;
+  height: 230rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid var(--lineColor);
+}
+.list_info_item .avatar {
+  flex: 2;
+  height: 100%;
+}
+.list_info_item .avatar .image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.list_info_item .info {
+  margin-left: 20rpx;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.list_info_item .info .name_star {
+  flex: 16;
+  display: flex;
+  flex-direction: column;
+}
+.list_info_item .info .name_star .name {
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.list_info_item .info .name_star .achieveLabel {
+  margin-top: 8rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 25rpx;
+}
+.list_info_item .info .other {
+  flex: 20;
+  margin-top: 8rpx;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 25rpx);
+  grid-row-gap: 6rpx;
+  font-size: 25rpx;
+}
+.list_info_item .info .other .star {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.list_info_item .info .other .star .text {
+  margin-right: 10rpx;
+  font-weight: normal;
+}
+.list_info_item .info .other .star .text2 {
+  font-weight: normal;
+}
+.list_info_item .info .other .fanNum {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.list_info_item .info .other .fanNum .text {
+  margin-right: 10rpx;
+  font-weight: normal;
+}
+.list_info_item .info .other .fanNum .text2 {
+  font-weight: normal;
+}
+.list_info_item .info .other .customNum {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.list_info_item .info .other .customNum .text {
+  margin-right: 10rpx;
+  font-weight: normal;
+}
+.list_info_item .info .other .customNum .text2 {
+  font-weight: normal;
+}
+.list_info_item .info .other .time {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+.list_info_item .info .other .time .text {
+  margin-right: 10rpx;
+  font-weight: normal;
+}
+.list_info_item .info .other .time .text2 {
+  font-weight: normal;
+}
+.list_info_item .info .expertLabel {
+  flex: 10;
+  margin-top: 8rpx;
+  display: flex;
+  flex-direction: row;
+}
+.list_info_item .info .expertLabel .labelItem {
+  margin-right: 15rpx;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: orange;
+  border: 2rpx solid;
+  font-size: 25rpx;
+  border-radius: 5rpx;
+}

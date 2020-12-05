@@ -1,0 +1,86 @@
+<!-- 顶栏 -->
+<view class="header">
+    <view class="imageHeader" lazy-load="true"></view>
+    <!-- 显示餐厅信息的卡片布局 -->
+    <span class="iconfont icon-back backicon transition" bindtap = "backTap"></span>
+    <view class="cardCafe card">
+        <view class="left">
+            <view class="name">{{cafeteria.name}}</view>
+            <view class="sold_per">
+                <view class="sold">月销量：{{cafeteria.sold}}</view>
+                <view class="per">人均：{{cafeteria.per}}元</view>
+            </view>
+            <view class="star">★★★★★</view>                 
+        </view>
+        <view class="logo">
+            <image class="image" src="{{cafeteria.src}}" mode="scaleToFill"></image> 
+        </view>
+    </view>
+</view>
+<view class="foot">
+    <view class="account">
+        <view class="account_left">
+            <span class="licon iconfont icon-tianjia"></span>
+            已选 {{menu_num}} 份菜
+        </view>
+        <view class="account_right">
+            <span class="ricon iconfont icon-tianjia"></span>
+            总价 {{menu_price}}元
+        </view>
+    </view>
+    <view class="order transition" bindtap = "orderTap">
+        提交
+    </view>
+</view>
+<!-- 中间点菜 -->
+<view class="menu_wrapper">
+    <view class="left">
+        <!-- 循环注入菜品标签 -->
+        <view 
+            wx:for="{{menuDiv}}" 
+            class="lmenu {{menuDiv_css[index]}}"
+            wx:key="index"
+            data-index="{{index}}"
+            bindtap="menuDiv"
+        >
+        {{item.name}}
+        </view>
+    </view>
+    <view class="menu">
+        <!-- 循环注入菜品信息 -->
+        <view class="info">
+            {{info}}
+        </view>
+        <view 
+            wx:for="{{menu}}" 
+            class="menu_"
+            wx:key="index"
+            data-index="{{index}}"
+        >   
+            <view class="src">
+                <image class="image" src="{{item.src}}" mode="scaleToFill"></image>
+            </view>
+            <view class="right">
+                <view class="name">{{item.name}}</view>
+                <view class="left_">
+                    <view class="left__">
+                        <view class="_star">★★★★★</view>
+                        <view class="_sold">月销量：{{item.sold}}</view>
+                        <view class="price"><span class="rmb">¥</span>{{item.price}}</view>
+                    
+                    </view>
+                    <view 
+                        class="add iconfont icon-add transition"
+                        bindtap="addTap"
+                        data-index="{{index}}"></view>
+                </view>
+                
+            </view>
+        </view>
+        <view class="blank">
+            
+        </view>
+    </view>
+</view>
+<!-- 底栏 -->
+

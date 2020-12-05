@@ -1,0 +1,258 @@
+.background{
+    // margin-left: 0;
+    // margin-right: 0;    
+    height: 1700rpx;
+    width: 750rpx;
+    position: fixed;
+    background-color: var(--bgColor); 
+    z-index: 0;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: normal;
+    color: var(--themeColor);
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-back{
+    z-index: 10;
+    position: fixed;
+    margin: 40rpx;
+    color: black;
+    font-weight: bolder;
+    font-size: 50rpx;
+}
+.header{
+    margin: 0;
+    position: relative;
+    height: 300rpx;
+    width: 100%;
+    display: flex;
+    .imageHeader{
+        position: absolute;
+        width: 100%;
+        height: 250rpx;
+        background-image: linear-gradient(rgba(240,248,255,0) 90%, rgba(240,248,255,1.0) 100%), url('http://sayhitotheworld.ryanalexander.cn/images/me.jpg');
+    }
+    .cardCafe{
+        position: absolute;
+        margin: 100rpx 40rpx 0 40rpx;
+        padding: 30rpx;
+        height: 170rpx;
+        background-color: var(--cardColor);
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        .left{
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+            .name{
+                // flex: 2;
+                font-size: 18px;
+                font-weight: bolder;
+                color: black;   
+            }
+            
+            .sold_per{
+                
+                font-size: 12px;
+                font-weight: lighter;
+                color:var(--labelColor);
+                display: flex;
+                flex-direction: row;
+                .sold{
+                    flex: 1;
+                    text-align: left;
+                }
+                .per{
+                    flex: 1;
+                    text-align: left;
+                }
+            }
+            .star{
+                color: var(--themeColor);
+                font-size: 12px;
+                font-weight: lighter;
+                // display: block;
+                // color:var(--labelColor);
+                // flex: 1;
+            }
+        }
+        .logo{
+            flex: 1;
+            height: 112rpx;
+            // width: ;
+            .image{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+}
+
+.menu_wrapper{
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    // background-color: blue;
+    .left{
+        flex: 1;
+        // border-radius: 10rpx;
+        display: block;
+        .lmenu{
+            // background-color: blueviolet;
+            height: 100rpx;
+            text-align: center;
+            line-height: 100rpx;
+            font-size: 13px;
+        }
+        .choosen{
+            background-color:white;
+            color: black;
+            border-left: 10rpx solid var(--themeColor);
+        }
+        .unchoosen{
+            background-color:var(--lineColor);
+            color: var(--labelColor);
+            border-left: 1px solid var(--themeColor);
+        }
+    }
+    .menu{
+        
+        flex: 4;
+        .info{
+            padding: 0 15rpx 15rpx 15rpx;    
+            font-size: 12px;
+            height: 50rpx;
+            color: var(--labelColor);
+            line-height: 14px;
+            text-align: start;
+        }
+        .menu_{
+            border-bottom: 1px solid var(--lineColor);
+            // height: 0rpx;
+            // flex: 1;
+            padding: 15rpx;
+
+            display: flex;
+            flex-direction: row;
+            .src{
+                flex: 1;
+                .image{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10rpx;
+                }
+            }
+            .right{
+                margin-left: 10rpx;
+                flex: 3;
+                text-align: left;
+                .name{
+                    font-weight: bolder;
+                    font-size: 30rpx;
+                    display: block;
+                    height: 30rpx;
+                    line-height: 30rpx;
+                }
+                .left_{
+                    font-size: 13px;
+                    font-weight: lighter;
+                    
+                    display: flex;
+                    flex-direction: row;
+                    // height: 50rpx;
+                    .left__{
+                        flex: 3;
+                        ._star{
+                            color: var(--themeColor);
+                        }
+                        ._sold{
+                            color: var(--labelColor);
+                            font-size: 13px;
+                        }
+                        .price{
+                            font-weight: bolder;
+                            color: crimson;
+                            font-size: 16px;
+                            .rmb{
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    .add{
+                        flex: 1;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+        .blank{
+            height: 100rpx;
+        }
+    }
+}
+
+.foot{
+    z-index: 100;
+    // background-color: #000;
+    position: fixed;
+    text-align: center;
+    width: 90%;
+    left: 43rpx;
+    bottom: 20rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-radius: 30rpx;
+    display: flex;
+    flex-direction: row;
+    .account{
+        flex: 3;
+        font-size: 28rpx;
+        border-radius: 30rpx 0 0 30rpx;
+        background-color: var(--bgColor);
+        display: flex;
+        flex-direction: row;
+        color: var(--themeColor);
+        .account_left{
+            flex: 1;
+
+        }
+        .account_right{
+            flex: 1;
+        }
+    }
+    .order{
+        flex: 1;
+        border-radius: 0 30rpx 30rpx 0;
+        background-color: var(--themeColor);
+        // font-weight: bolder;
+        
+        font-size: 40rpx;
+        color: var(--bgColor);
+        
+        
+    };
+    // border-radius: 20rpx !important;
+    box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(251,216,86,0.4);
+
+}
+.card{
+    // margin: 10px;
+    background-color: var(--cardColor);
+    box-shadow: 6rpx 6rpx 15rpx 3rpx rgba(0,0,0,0.21);
+
+    // position:relative;
+    
+    min-height: 170rpx;
+    // padding: 10rpx 20rpx 20rpx 20rpx;
+    z-index: 6;
+
+    border-radius: 10rpx;
+}
